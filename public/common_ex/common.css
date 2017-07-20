@@ -1789,6 +1789,19 @@ body.timeline header>h1{
 #footer {
 	padding-bottom: 50px;
 }
+
+.page {
+	padding: 0px !important;
+}
+
+.caption_font.path-breadcrumb {
+	padding-top: 98px !important;
+}
+
+/*.image_header {
+	padding-top: 49px !important;
+}*/
+
 /*
 .zoom_img img{
 width:100%;
