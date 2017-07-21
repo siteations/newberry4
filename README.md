@@ -14,8 +14,8 @@ For local prep, the following has been done:
 1. GENERAL REFERENCES
 all general links/references files (css, jquery, etc.) have been collated into the 'public/common_ex' folder to avoid massive duplicates.
 * given that there have been two general find/replace actions run on all html files:
-..* first all link for those references '[whatever the page_files]/stylesheets etc.' has been updated to ../public/common_ex
-..* a few background images should have their 'http://publications.newberry.org/rcp-files/images/[files]' replaces with ../public/media
+* first all link for those references '[whatever the page_files]/stylesheets etc.' has been updated to ../public/common_ex
+* a few background images should have their 'http://publications.newberry.org/rcp-files/images/[files]' replaces with ../public/media
 
 2. CSS
 * The class 'viewmore' has been set to 'visibility: hidden' in the file public/common_ex/common.css.
