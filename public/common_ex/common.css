@@ -1798,6 +1798,26 @@ body.timeline header>h1{
 	padding-top: 98px !important;
 }
 
+.submenu {
+		color: #b3b3b3;
+    width: auto;
+    height: auto;
+    left: 0;
+    padding-left: 4rem;
+    margin-left: 3.5rem;
+    right: 2.2rem;
+}
+
+.submenu li a{
+		text-decoration-line: none;
+}
+
+.submenu li {
+	margin-top: 2.5px;
+}
+
+
+
 /*.image_header {
 	padding-top: 49px !important;
 }*/
