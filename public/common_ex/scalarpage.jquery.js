@@ -44,7 +44,7 @@
 			adaptiveMedia: 'full',
 			generateIconCache: {},
 			mapMarkers: [],
-			
+
 			incrementData: function(selection, data) {
 				var value = selection.data(data);
 				if (value != undefined) {
@@ -538,7 +538,7 @@
 
 								// continue button
 								links = $( '<p></p>' );
-								var continue_button = $( '<a class="continue_btn nav_btn" href="' + page.containingPathNodes[page.containingPathIndex+1].url +
+								var continue_button = $( '<a class="continue_btn nav_btn btn_bottom" href="' + page.containingPathNodes[page.containingPathIndex+1].url +
 									'?path=' + page.containingPath.slug + '">' + continueVerbage + '&ldquo;' + page.containingPathNodes[page.containingPathIndex+1].getDisplayTitle() +
 									'&rdquo;</a>' ).appendTo(links);
 								if ( pathOptionCount == 0 ) {
@@ -547,7 +547,7 @@
 
 								// back button
 								if ( page.containingPathIndex > 0 ) {
-									var back_button = $( '<a id="back-btn" class="nav_btn bordered" href="' + page.containingPathNodes[ page.containingPathIndex - 1 ].url + '?path=' + page.containingPath.slug + '">&laquo; Go back</a> ' ).prependTo(links);
+									var back_button = $( '<a id="back-btn" class="nav_btn bordered btn_bottom" href="' + page.containingPathNodes[ page.containingPathIndex - 1 ].url + '?path=' + page.containingPath.slug + '">&laquo; Go back</a> ' ).prependTo(links);
 								}
 
 								section.append( links );
@@ -1308,8 +1308,8 @@
 
 							if ( node.current.description != null ) {
 								description = node.current.description;
-								
-								
+
+
 								// if catalog link (source) and digitized ITEM link (relation) are both present, AND digitized SELECTION link (isPartOf) is not, show links to catalog and digitized ITEM
 								if (node.current.source != null && node.current.auxProperties["dcterms:relation"] != null && node.current.auxProperties["dcterms:isPartOf"] == null) {
 									description += '<div class="viewmore"><br>View: <a href=' + node.current.auxProperties["dcterms:relation"] + ' target="_blank">Digitized item</a> | <a href='+ node.current.source + ' target="_blank">Catalog record</a></div>';
@@ -1318,14 +1318,14 @@
 								else if (node.current.source != null && node.current.auxProperties["dcterms:isPartOf"] != null && node.current.auxProperties["dcterms:relation"] == null) {
 								description += '<div class="viewmore"><br>View: <a href=' + node.current.auxProperties["dcterms:isPartOf"] + ' target="_blank">Digitized selections</a> | <a href='+ node.current.source + ' target="_blank">Catalog record</a></div>';
 								}
-								// if catalog link (source) is present, but digitized ITEM link (relation) and digitized selections link (isPartOf) are not, show link to catalog record only 
+								// if catalog link (source) is present, but digitized ITEM link (relation) and digitized selections link (isPartOf) are not, show link to catalog record only
 								else if (node.current.source != null && node.current.auxProperties["dcterms:isPartOf"] == null && node.current.auxProperties["dcterms:relation"] == null) {
 										description += '<div class="viewmore"><br>View: <a href="'+ node.current.source + '" target="_blank">Catalog record</a></div>';
 								}
 								else {
 										description = description;
 								}
-								
+
 								var max_length = 200;
 								var descriplength = description.length;
 								if (descriplength > max_length) {
@@ -1347,16 +1347,16 @@
 									'<a href="' + node.url + '" role="button" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-title="' + node.getDisplayTitle().replace( '"', '&quot;' ) + '" data-content="">' + node.getDisplayTitle() + '</a> (' + ( i + 1 ) + '/' + n + ')' +
 									'</span></div>' );
 								// added by MK to add description under image in slideshow gallery
-								
+
 								item.append( '<div class="description-caption">'+ description + '</div>' );
 								var descriptcapt = $('.description-caption');
-								
+
 								var textHeight = descriptcapt.height();
 								// this below accounts for margin-top height, by default set to 15px. It will get screwy if people replace with rem value since it gets parsed as pixel integer here
 								var margins = parseInt($('.description-caption').css("margin-top"), 10);
 								$('.item').css("height", galleryHeight += textHeight += margins);
 								$('.mediaObject img').css("height", galleryHeight -= textHeight);
-								
+
 							} else {
 								item.append( '<div class="carousel-caption caption_font"><span>' +
 									'<a href="' + node.url + '" >' + node.getDisplayTitle() + '</a> (' + ( i + 1 ) + '/' + n + ')' +
@@ -1364,10 +1364,10 @@
 							}
 
 							page.addMediaElementForLink( link, mediaContainer, galleryHeight );
-							
+
 
 						}
-						
+
 						if ( page.adaptiveMedia != "mobile" ) {
 							wrapper.find( '[data-toggle="popover"]' ).popover( {
 								container: '#gallery',
@@ -2023,7 +2023,7 @@
 				if ( currentNode.current.description != null ) {
 					$( '.title_card' ).append( '<div class="description">' + currentNode.current.description + '</div>' );
 				}
-				
+
 				// add book title and placeholder for author list
 				if ( viewType == "book_splash" ) {
 					$( 'h1[property="dcterms:title"]' ).html( $( '.book-title' ).html() );
