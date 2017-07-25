@@ -1811,7 +1811,7 @@ body.timeline header>h1{
 
 .navbar ul.dropdown-menu li.static>a, .navbar ul.dropdown-menu>li>a, .navbar ul.dropdown-menu .relationships li>a, .navbar ul.dropdown-menu .body>ol>li>a {
     font-size: 2.2rem !important;
-    margin-bottom: 2.2rem;
+    margin-bottom: 2rem;
 }
 
 .submenu li a{
@@ -1819,7 +1819,7 @@ body.timeline header>h1{
 }
 
 .submenu li {
-	margin-top: 2.2rem;
+	margin-top: 2rem;
 }
 
 @media (min-width: 768px) {
