@@ -1803,15 +1803,15 @@ body.timeline header>h1{
     width: auto;
     height: auto;
     left: 0;
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding-left: 4rem;
     margin-left: 3.5rem;
     right: 2.2rem;
 }
 
 .navbar ul.dropdown-menu li.static>a, .navbar ul.dropdown-menu>li>a, .navbar ul.dropdown-menu .relationships li>a, .navbar ul.dropdown-menu .body>ol>li>a {
-    font-size: 2rem !important;
-    margin-bottom: 2rem;
+    font-size: 2.2rem !important;
+    margin-bottom: 2.2rem;
 }
 
 .submenu li a{
@@ -1819,7 +1819,7 @@ body.timeline header>h1{
 }
 
 .submenu li {
-	margin-top: 2rem;
+	margin-top: 2.2rem;
 }
 
 @media (min-width: 768px) {
@@ -1842,11 +1842,25 @@ body.timeline header>h1{
 
 
 .path-breadcrumb {
-		font-size: 2rem !important;
+		font-size: 2.2rem !important;
 }
 
 .btn_bottom {
 	line-height: 48px !important;
+}
+
+.media_link.texteo_icon.texteo_icon_image {
+	font-size: 2.2rem !important;
+}
+
+.body-copy {
+	font-size: 1.25rem !important;
+}
+
+.path_of a {
+	font-size: 2.2rem !important;
+	line-height: 4rem !important;
+	margin-bottom: 2.2rem !important;
 }
 
 
