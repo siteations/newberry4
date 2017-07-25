@@ -1863,6 +1863,43 @@ body.timeline header>h1{
 	margin-bottom: 2.2rem !important;
 }
 
+.titleAlt {
+	color: #ac2728;
+	font-family: 'Lato';
+	vertical-align: baseline;
+	line-height:3em;
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-top: 0rem !important;
+	letter-spacing: 1px;
+	width: 100%;
+	border-bottom: solid 1px #ac2728;
+
+}
+
+.marg40 {
+	margin-top:40px;
+	padding: 10px;
+}
+
+.indexGen {
+	color: #ffffff;
+	background-color: #666;
+}
+
+.indexItem:hover {
+	background-color: #f6f6f6;
+	border-radius: 10px;
+}
+
+.indexItem p {
+	color: #888;
+	text-decoration-line: none;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
 
 /*.image_header {
 	padding-top: 49px !important;
